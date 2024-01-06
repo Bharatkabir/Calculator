@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black; 
+  color: white;
+}
+.card{
+    width: 28%;
+    margin: 44px auto;
+    background-color: #363636;
+}
+
+.card-title {
+  display: flex;
+}
+h4 {
+  margin: -11px auto;
+  color: white;
+  font-weight: 800;
+}
+.input{
+    display: flex;
+    justify-content: flex-end;
+}
+.input input{
+    width: 98%;
+    height: 46px;
+    margin: 21px auto;
+    border: none;
+    outline: none;
+    background-color: #363636;
+    padding: 18px;
+    text-align: end;
+    font-weight: 500;
+    border-radius: 10px;
+    color: white;
+}
+.input input::placeholder{
+    color: white;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 18px;
+}
+.btn1{
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 15 2 29 22 red;
+    cursor: pointer;
+    box-shadow: 0px 3px 4px 5px rgba(0,0,0,0.3);
+    width: 17%;
+    height: 37px;
+    background-color: #c35050;
+    border: none;
+    outline: none;
+    border-radius: 8px;                                                                                                                                             
+}
+button{
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 15 2 29 22 red;
+    cursor: pointer;
+    box-shadow: 0px 3px 4px 5px rgba(0,0,0,0.3);
+    width: 17%;
+    height: 37px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #5e5a5a;
+    color: white;
+}
+.btn2{
+    width: 40%;
+    background-color: #5fd85f;
+}
+.btn1:active,
+button:active {
+    transform: scale(0.95); /* Scale down the button slightly when clicked */
+    transition: transform 0.1s ease; /* Smooth transition effect */
+}
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    .btn1,
+    button {
+        width: 16%;
+    }
+}
